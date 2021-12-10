@@ -1,0 +1,19 @@
+From 199ec9f7a8538f189a933828067c612afce04b12 Mon Sep 17 00:00:00 2001
+From: Pavol Rusnak <pavol@rusnak.io>
+Date: Sat, 4 Dec 2021 12:57:47 +0100
+Subject: [PATCH] add missing <sstream> include (#42)
+
+---
+ src/deploy.cpp | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/src/deploy.cpp b/src/deploy.cpp
+index 50e46a8..d018719 100644
+--- a/src/deploy.cpp
++++ b/src/deploy.cpp
+@@ -1,3 +1,5 @@
++#include <sstream>
++
+ #include <libtree/deploy.hpp>
+ #include <libtree/exec.hpp>
+ 
