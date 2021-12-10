@@ -34,7 +34,7 @@ requirements:
 
 test:
   commands:
-    - {{ name }} --version
+    - {{ name }} --version  # [build_platform == target_platform]
 
 about:
   home: https://github.com/haampie/libtree
