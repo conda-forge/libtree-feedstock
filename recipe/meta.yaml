@@ -12,7 +12,8 @@ source:
     - sstream.patch
 
 build:
-  number: 0
+  number: 1
+  skip: true  # [win]
   script:
     - set -ex  # [unix]
     - CXXFLAGS="${CXXFLAGS} -D_LIBCPP_DISABLE_AVAILABILITY"  # [osx]
