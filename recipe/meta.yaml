@@ -14,21 +14,14 @@ build:
   skip: true  # [win]
   script:
     - set -ex  # [unix]
-    - CXXFLAGS="${CXXFLAGS} -D_LIBCPP_DISABLE_AVAILABILITY"  # [osx]
-    - cmake ${CMAKE_ARGS} -G Ninja -B _build  # [unix]
-    - cmake -DCMAKE_INSTALL_PREFIX=%PREFIX% -G Ninja -B _build  # [win]
-    - cmake --build _build
-    - ctest --test-dir _build --output-on-failure  # [build_platform != target_platform]
-    - cmake --install _build
+    - make
+    - make check  # [build_platform == target_platform]
+    - make install
 
 requirements:
   build:
-    - {{ compiler('cxx') }}
-    - cmake
-    - ninja
-    - elfio
-    - cxxopts
-    - termcolor-cpp
+    - {{ compiler('c') }}
+    - make
 
 test:
   commands:
