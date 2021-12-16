@@ -8,8 +8,6 @@ package:
 source:
   url: https://github.com/haampie/libtree/archive/refs/tags/v{{ version }}.tar.gz
   sha256: 20d3cd66f5c74058de9dd594af8ffd639c795d27ab435c588a3cd43911c1604f
-  patches:
-    - sstream.patch
 
 build:
   number: 0
