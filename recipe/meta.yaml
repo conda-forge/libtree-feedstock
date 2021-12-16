@@ -15,7 +15,7 @@ build:
   script:
     - set -ex  # [unix]
     - make
-    - make check  # [build_platform == target_platform]
+    - make -i check  # [build_platform == target_platform]
     - make install
 
 requirements:
