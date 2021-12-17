@@ -11,11 +11,6 @@ source:
 
 build:
   number: 0
-  script:
-    - set -ex  # [unix]
-    - make
-    - make -i check  # [build_platform == target_platform]
-    - make install
 
 requirements:
   build:
