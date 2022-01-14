@@ -1,5 +1,5 @@
 {% set name = "libtree" %}
-{% set version = "3.0.1" %}
+{% set version = "3.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/haampie/libtree/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 20d3cd66f5c74058de9dd594af8ffd639c795d27ab435c588a3cd43911c1604f
+  sha256: f07c9cf3394cacd1eab15d42b97b9b6787d8bd3b7f6746fe0f39e7d951eebaac
 
 build:
   number: 0
